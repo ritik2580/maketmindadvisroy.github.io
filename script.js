@@ -71,6 +71,10 @@ function showNextTestimonial() {
     currentTestimonial = (currentTestimonial + 1) % testimonials.length;
     testimonials[currentTestimonial].classList.add('active');
 }
+window.addEventListener('load', function() {
+    const progressBar = document.getElementById('progress-bar');
+    progressBar.style.width = '100%';
+});
 
 setInterval(showNextTestimonial, 4000);  // Change testimonial every 4 seconds
 
