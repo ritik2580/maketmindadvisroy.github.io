@@ -259,6 +259,55 @@ header {
         bottom: 15px;
     }
 }
+.progress-bar {
+    height: 5px;
+    background-color: #0077cc;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: width 0.5s ease;
+}
+.pricing-table {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.pricing-box {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    width: 40%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button {
+    background-color: #28a745;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #218838;
+}
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #0077cc;
+    padding: 10px;
+    z-index: 999;
+}
 
 /* Extra small screens (like small phones) */
 @media only screen and (max-width: 480px) {
