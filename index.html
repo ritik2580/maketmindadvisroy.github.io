@@ -1,11 +1,10 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Market Minds Advisory</title>
+    <title>Market Minds Advisory - Empowering You to Trade Smarter</title>
+    <meta name="description" content="Market Minds Advisory offers expert trading courses to help you master the financial markets. Sign up for our basic or advanced courses today.">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,77 +14,105 @@
             <h1 class="animated-title">Market Minds Advisory</h1>
             <p class="tagline">Empowering You to Trade Smarter</p>
         </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
     </header>
+
+    <div class="hero-section fade-in">
+        <div class="hero-content">
+            <h2>Master the Markets with Expert Guidance</h2>
+            <p>Join our comprehensive trading courses and take your trading skills to the next level.</p>
+            <a href="#enroll-form" class="cta-button">Get Started</a>
+        </div>
+    </div>
+
     <button id="back-to-top" class="back-to-top">⬆️</button>
-   
+    <button class="cta-button signup-btn">Sign Up Now</button>
     <div id="progress-bar" class="progress-bar"></div>
 
-    <section class="intro">
-        <h2>Why Choose Market Minds Advisory?</h2>
-        <p>At Market Minds Advisory, we are dedicated to providing top-notch market analysis and trading courses that equip you with the knowledge and tools to succeed in the financial markets. Whether you are a beginner or an experienced trader, we offer tailored courses designed to improve your trading skills and boost your confidence in making market decisions.</p>
-    </section>
+    <main>
+        <!-- Intro Section -->
+        <section class="intro fade-in">
+            <h2>Why Choose Market Minds Advisory?</h2>
+            <p>At Market Minds Advisory, we are dedicated to providing top-notch market analysis and trading courses that equip you with the knowledge and tools to succeed in the financial markets. Whether you are a beginner or an experienced trader, we offer tailored courses designed to improve your trading skills and boost your confidence in making market decisions.</p>
+        </section>
 
-    <section class="enroll-form">
-        <h2>Enroll in a Course</h2>
-        <form action="#" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-    
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-    
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone" required>
-    
-            <label for="course">Select Course:</label>
-            <select id="course" name="course">
-                <option value="basic">Basic Course</option>
-                <option value="advance">Advance Course</option>
-            </select>
-    
-            <button type="submit" class="cta-button">Enroll Now</button>
-        </form>
-    </section>
-    
-    <meta name="description" content="Market Minds Advisory offers expert trading courses to help you master the financial markets. Sign up for our basic or advanced courses today.">
-    <section class="courses">
-        <h2>Our Courses</h2>
-    
-        <div class="course-box basic-course">
-            <h3><a href="basic-course.html">Basic Course - ₹17,999</a></h3>
-            <ul>
-                <li>Technical Analysis</li>
-                <li>Types of Charts</li>
-                <li>Candlestick Patterns</li>
-                <li>Support & Resistance</li>
-                <li>Indicators</li>
-                <li>Risk Management</li>
-                <li>Trading Psychology</li>
-                <li>Market Analysis</li>
-                <li>Live Trading</li>
-            </ul>
-        </div>
-    
-        <div class="course-box advance-course">
-            <h3><a href="advance-course.html">Advance Course - ₹27,999</a></h3>
-            <ul>
-                <li>Technical Analysis</li>
-                <li>Types of Charts</li>
-                <li>Candlestick Patterns</li>
-                <li>Support & Resistance</li>
-                <li>Indicators</li>
-                <li>Risk Management</li>
-                <li>Trading Psychology</li>
-                <li>Market Analysis</li>
-                <li>Live Trading</li>
-                <li>Price Action</li>
-                <li>OI Data</li>
-                <li>Data Reading</li>
-            </ul>
-        </div>
-    </section>
-    
-        <section class="newsletter">
+        <!-- Enroll Form -->
+        <section class="enroll-form fade-in" id="enroll-form">
+            <h2>Enroll in a Course</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="course">Select Course:</label>
+                <select id="course" name="course">
+                    <option value="basic">Basic Course</option>
+                    <option value="advance">Advance Course</option>
+                </select>
+
+                <button type="submit" class="cta-button">Enroll Now</button>
+            </form>
+        </section>
+
+        <!-- Courses Section -->
+        <section class="courses fade-in" id="courses">
+            <h2>Our Courses</h2>
+            <div class="course-container">
+                <div class="course-box basic-course">
+                    <h3><a href="basic-course.html">Basic Course - ₹17,999</a></h3>
+                    <button class="toggle-details">Show Details</button>
+                    <ul class="course-details">
+                        <li><span class="checkmark">✓</span>Technical Analysis</li>
+                        <li><span class="checkmark">✓</span>Types of Charts</li>
+                        <li><span class="checkmark">✓</span>Candlestick Patterns</li>
+                        <li><span class="checkmark">✓</span>Support & Resistance</li>
+                        <li><span class="checkmark">✓</span>Indicators</li>
+                        <li><span class="checkmark">✓</span>Risk Management</li>
+                        <li><span class="checkmark">✓</span>Trading Psychology</li>
+                        <li><span class="checkmark">✓</span>Market Analysis</li>
+                        <li><span class="checkmark">✓</span>Live Trading</li>
+                    </ul>
+                </div>
+
+                <div class="course-box advance-course">
+                    <h3><a href="advance-course.html">Advance Course - ₹27,999</a></h3>
+                    <button class="toggle-details">Show Details</button>
+                    <ul class="course-details">
+                        <li><span class="checkmark">✓</span>Technical Analysis</li>
+                        <li><span class="checkmark">✓</span>Types of Charts</li>
+                        <li><span class="checkmark">✓</span>Candlestick Patterns</li>
+                        <li><span class="checkmark">✓</span>Support & Resistance</li>
+                        <li><span class="checkmark">✓</span>Indicators</li>
+                        <li><span class="checkmark">✓</span>Risk Management</li>
+                        <li><span class="checkmark">✓</span>Trading Psychology</li>
+                        <li><span class="checkmark">✓</span>Market Analysis</li>
+                        <li><span class="checkmark">✓</span>Live Trading</li>
+                        <li><span class="checkmark">✓</span>Price Action</li>
+                        <li><span class="checkmark">✓</span>OI Data</li>
+                        <li><span class="checkmark">✓</span>Data Reading</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter fade-in">
             <h2>Stay Updated</h2>
             <p>Sign up for our newsletter to receive market insights and course updates.</p>
             <form action="#">
@@ -93,103 +120,56 @@
                 <button type="submit" class="cta-button">Subscribe</button>
             </form>
         </section>
-        <section class="courses">
-            <h2>Our Courses Comparison</h2>
-        
-            <div class="course-box basic-course">
-    <h3>Basic Course - ₹17,999</h3>
-    <ul>
-        <li><span class="checkmark">✓</span>Technical Analysis</li>
-        <li><span class="checkmark">✓</span>Types of Charts</li>
-        <li><span class="checkmark">✓</span>Candlestick Patterns</li>
-        <li><span class="checkmark">✓</span>Support & Resistance</li>
-        <li><span class="checkmark">✓</span>Indicators</li>
-        <li><span class="checkmark">✓</span>Risk Management</li>
-        <li><span class="checkmark">✓</span>Trading Psychology</li>
-        <li><span class="checkmark">✓</span>Market Analysis</li>
-        <li><span class="checkmark">✓</span>Live Trading</li>
-    </ul>
-</div>
 
-<div class="course-box advance-course">
-    <h3>Advance Course - ₹27,999</h3>
-    <ul>
-        <li><span class="checkmark">✓</span>Technical Analysis</li>
-        <li><span class="checkmark">✓</span>Types of Charts</li>
-        <li><span class="checkmark">✓</span>Candlestick Patterns</li>
-        <li><span class="checkmark">✓</span>Support & Resistance</li>
-        <li><span class="checkmark">✓</span>Indicators</li>
-        <li><span class="checkmark">✓</span>Risk Management</li>
-        <li><span class="checkmark">✓</span>Trading Psychology</li>
-        <li><span class="checkmark">✓</span>Market Analysis</li>
-        <li><span class="checkmark">✓</span>Live Trading</li>
-        <li><span class="checkmark">✓</span>Price Action</li>
-        <li><span class="checkmark">✓</span>OI Data</li>
-        <li><span class="checkmark">✓</span>Data Reading</li>
-    </ul>
-</div>
-
-            
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials fade-in">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial-container">
+                <div class="testimonial active">"Great course, learned a lot!" - Rahul Gupta</div>
+                <div class="testimonial">"Highly recommend, excellent material!" - Kirti Sharma</div>
+                <div class="testimonial">"Truly empowering!" - Vishal Kumar</div>
+                <div class="testimonial">"Great staff, which made learning easier!" - Sanjay Kumar</div>
+            </div>
         </section>
-        
-        
-        <section id="testimonials" class="fade-in">
-    <h2>What Our Clients Say</h2>
-    <div class="testimonial-container">
-        <div class="testimonial active">"Great course, learned a lot!" - Rahul Gupta</div>
-        <div class="testimonial">"Highly recommend, excellent material!" - Kirti Sharma</div>
-        <div class="testimonial">"Truly empowering!" - Vishal Kumar</div>
-        <div class="testimonial">"Great staff, which made learning easier!" - Sanjay Kumar</div>
-    </div>
-</section>
 
-    </section>
-    <nav>
-        <ul>
-            <li><a href="#courses">Courses</a></li>
-            <li><a href="#about-us">About Us</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-   
+        <!-- About Us Section -->
+        <section id="about-us" class="about-us fade-in">
+            <h2>About Us</h2>
+            <p>With years of experience in the trading industry, Market Minds Advisory brings comprehensive knowledge to guide traders through the complex world of financial markets. We believe in simplifying trading strategies and making education accessible for all levels.</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact fade-in">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:nisheshmittal88@gmail.com">nisheshmittal88@gmail.com</a></p>
+                <p>Phone: <a href="tel:+74541868914">74541868914</a></p>
+            </div>
+        </section>
+    </main>
+
     <!-- Chatbot Button -->
-<div class="chatbot">
-    <button id="chatbot-btn" class="chatbot-btn">
-        <img src="https://img.icons8.com/ios-glyphs/30/ffffff/chat.png" alt="Chat Icon"/>
-    </button>
-    <div class="chatbot-window" id="chatbot-window">
-        <div class="chatbot-header">
-            <h3>Market Minds Assistant</h3>
-            <button id="close-chatbot" class="close-chatbot">&times;</button>
-        </div>
-        <div class="chatbot-body">
-            <p>Hello! I'm RITIK. How can I assist you today?</p>
-        </div>
-        <div class="chatbot-footer">
-            <input type="text" id="chatbot-input" placeholder="Type your message here..." />
-            <button id="send-btn">Send</button>
+    <div class="chatbot">
+        <button id="chatbot-btn" class="chatbot-btn" aria-label="Open Chatbot">
+            <img src="https://img.icons8.com/ios-glyphs/30/ffffff/chat.png" alt="Chat Icon"/>
+        </button>
+        <div class="chatbot-window" id="chatbot-window">
+            <div class="chatbot-header">
+                <h3>Market Minds Assistant</h3>
+                <button id="close-chatbot" class="close-chatbot" aria-label="Close Chatbot">&times;</button>
+            </div>
+            <div class="chatbot-body">
+                <p>Hello! I'm Charvis . How can I assist you today?</p>
+            </div>
+            <div class="chatbot-footer">
+                <input type="text" id="chatbot-input" placeholder="Type your message here..." aria-label="Chatbot input" />
+                <button id="send-btn">Send</button>
+            </div>
         </div>
     </div>
-</div>
-
-
-<section id="courses" class="fade-in">
-    <!-- Courses content here -->
-</section>
-
-<section id="about-us" class="fade-in">
-    <!-- About us content here -->
-</section>
-
-
-    <section class="about-us">
-        <h2>About Us</h2>
-        <p>With years of experience in the trading industry, Market Minds Advisory brings comprehensive knowledge to guide traders through the complex world of financial markets. We believe in simplifying trading strategies and making education accessible for all levels.</p>
-    </section>
 
     <footer>
         <div class="footer-content">
-            
             <div class="contact-info">
                 <h4>Contact Us</h4>
                 <p>Email: <a href="mailto:nisheshmittal88@gmail.com">nisheshmittal88@gmail.com</a></p>
@@ -200,7 +180,6 @@
             <p>&copy; 2024 Market Minds Advisory. All Rights Reserved.</p>
         </div>
     </footer>
-    
 
     <script src="script.js"></script>
 </body>
